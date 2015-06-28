@@ -1,0 +1,59 @@
+
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body {
+  font-family: sans-serif;
+}
+
+.grid{
+  width: auto;
+  margin: 0px auto;
+  background-color: black;
+  max-width: 1280px;
+	margin: 30px auto;
+	padding: 0;
+}
+/* .item a div img{
+  overflow: hidden;
+
+} */
+.grid-item{
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+  background-color: green;
+  height: auto;
+}
+
+
+
+.grid-item img{
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+.grid:after {
+  content: " "; /* Older browser do not support empty content */
+     visibility: hidden;
+     display: table;
+     height: 0;
+     clear: both;
+}
+
+
+figCaption{
+  max-width: 100%;
+  background-color: red;
+}
